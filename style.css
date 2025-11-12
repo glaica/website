@@ -1,0 +1,96 @@
+:root {
+  --accent: #0ea5a4;
+  --muted: white;
+}
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url(https://wallpaperaccess.com/full/2489904.jpg);
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+  padding: 1rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 1rem;
+}
+.nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #111827;
+}
+.nav a:hover {
+  color: var(--accent);
+}
+.brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.signin {
+  background: linear-gradient(90deg, rgba(14,165,164,0.05), rgba(99,102,241,0.03));
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn.secondary {
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.about {
+  background: linear-gradient(90deg, rgba(14,165,164,0.05), rgba(99,102,241,0.03));
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.btn.about {
+  background: var(--accent);
+  font-style:oblique;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none; 
+}
+.btn.feedbacks {
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.card {
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 8px;
+}
+footer {
+  background: #f8fafc;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--muted);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Order Cart</title>
+  <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Shop</h1>
+
+    <!-- Product list -->
+    <div class="products">
+      <div class="product">
+        <h3>Pants</h3>
+        <p>₱100</p>
+        <button onclick="addToCart('Product A', 100)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <h3>T-Shirt</h3>
+        <p>₱150</p>
+        <button onclick="addToCart('Product B', 150)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <h3>Heels</h3>
+        <p>₱200</p>
+        <button onclick="addToCart('Product C', 200)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: ₱0</p>
+      <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="cartscript.js"></script>
+</body>
+</html>
